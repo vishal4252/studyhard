@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hard</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="myFunction()">
+    <div id="loader">
+    </div>
+
+    <!--===========================================================================
+                                    NAVBAR SECTION 
+    =========================================================================== -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-xl fa-graduation-cap fa-flip-horizontal"
+                        style="color: #000000;"></i> Study Hard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" list="datalistOptions" placeholder="Search"
+                            aria-label="Search" oninput="checkRedirect(this.value)">
+                        <datalist id="datalistOptions">
+                            <option value="Notes">
+                            <option value="Assignments">
+                            <option value="Practical Files">
+                            <option value="Previous Year Papers">
+                            <option value="Articles">
+                            <option value="Research Papers">
+                            <option value="Questionnaire">
+                        </datalist>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--===========================================================================
+                                    TOP SECTION 
+    =========================================================================== -->
+
+    <div class="top-section">
+        <div class="sub-top-section">
+            <img src="images/top-image.jpg" alt="" srcset="">
+        </div>
+        <div class="sub-top-thought">
+            <p>
+                <span class="auto-type"></span>
+            </p>
+        </div>
+    </div>
+
+    <!--===========================================================================
+                                    HERO SECTION 
+    =========================================================================== -->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    C++ PROGRAMMING
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <a href="cpp.html">
+                        <strong>
+                            C++ programming is a high-level programming language that is widely used for developing a
+                            variety of
+                            software
+                            applications.
+                            <span style="color: blue; text-decoration: underline;">
+                                Tap to expand
+                            </span>
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    C PROGRAMMING
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <a href="cpp.html">
+                        <strong>
+                            C programming is a general-purpose programming language that was developed in the early
+                            1970s by
+                            Dennis Ritchie at Bell
+                            Laboratories. It is a procedural programming language known for its efficiency, simplicity,
+                            and
+                            versatility.
+                            <span style="color: blue; text-decoration: underline;">
+                                Tap to expand
+                            </span>
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    JAVA PROGRAMMING
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <a href="cpp.html">
+                        <strong>
+                            Java programming is a high-level, object-oriented programming language that was developed by
+                            Sun
+                            Microsystems (now owned
+                            by Oracle Corporation) in the mid-1990s. It is designed to be platform-independent, robust,
+                            secure, and easy to use.
+                            <span style="color: blue; text-decoration: underline;">
+                                Tap to expand
+                            </span>
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    SOFTWARE ENGINEERING
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <a href="cpp.html">
+                        <strong>
+                            Software engineering is a discipline that involves the systematic application of engineering
+                            principles, methods, and
+                            tools to develop, design, test, deploy, and maintain software systems.
+                            <span style="color: blue; text-decoration: underline;">
+                                Tap to expand
+                            </span>
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    COMPUTER GRAPHICS
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <a href="cpp.html">
+                        <strong>
+                            Computer graphics refers to the creation, manipulation, and rendering of visual content
+                            using
+                            computers. It involves
+                            generating and displaying images, animations, and interactive visual experiences.
+                            <span style="color: blue; text-decoration: underline;">
+                                Tap to expand
+                            </span>
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===========================================================================
+                                    SERVICE SECTION 
+    =========================================================================== -->
+
+    <div class="service-section">
+        <a href="notes.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/notes.jpg" alt="" srcset="">
+                <p>
+                    NOTES
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="assignment.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/assignment.jpg" alt="" srcset="">
+                <p>
+                    ASSIGNMENT ANSWERS
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="practicalfiles.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/practicle.jpg" alt="" srcset="">
+                <p>
+                    PRACTICAL FILES
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="previouspapers.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/papers.jpg" alt="" srcset="">
+                <p>
+                    PREVIOUS YEAR PAPERS
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="articles.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/articles.jpg" alt="" srcset="">
+                <p>
+                    EXAMPLES OF ARTICLES
+                </p>
+                <button>SEE HERE</button>
+            </div>
+        </a>
+        <a href="how-to-wrt-art.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/question.png" alt="" srcset="">
+                <p>
+                    HOW TO WRITE AN ARTICLE?
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="research-ppr.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/research-papers.jpg" alt="" srcset="">
+                <p>
+                    EXAMPLES OF RESEARCH PAPER
+                </p>
+                <button>SEE HERE</button>
+            </div>
+        </a>
+        <a href="how-to-wrt-rp.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/question.png" alt="" srcset="">
+                <p>
+                    HOW TO WRITE A RESEARCH PAPER?
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="video-lec.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/concepts.jpg" alt="" srcset="">
+                <p>
+                    PROGRAMMING CONCEPTS: SYNTAX AND EXAMPLES
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="notes.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/questionnaires.png" alt="" srcset="">
+                <p>
+                    QUESTIONNAIRES
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="notes.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/major-projects.jpg" alt="" srcset="">
+                <p>
+                    MAJOR PROJECTS
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="notes.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/major-projects.jpg" alt="" srcset="">
+                <p>
+                    THESIS
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="teacher.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/icons8-teacher-480.png" alt="" srcset="">
+                <p>
+                    TEACHERS CATEGORY
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+        <a href="professors.html">
+            <div class="sub-service-section" data-aos="zoom-in" data-aos-offset="220">
+                <img src="images/teacher.jpg" alt="" srcset="">
+                <p>
+                    OUR REPUTED ALUMNI
+                </p>
+                <button>CLICK HERE</button>
+            </div>
+        </a>
+    </div>
+
+    <!--===========================================================================
+                                    FOOTER SECTION 
+    =========================================================================== -->
+
+    <footer>
+        <div class="card text-center">
+
+            <div class="card-header">
+                <h4>
+                    <i class="fa-sharp fa-solid fa-lg fa-graduation-cap fa-flip-horizontal" style="color: #000000;"></i>
+                    Study Hard
+                </h4>
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">KEEP LEARNING KEEP DEVELOPING <i class="fa-solid fa-book-open-reader"></i></h6>
+                <p class="card-text">We are here to help you <i class="fa-solid fa-handshake-angle"></i></p>
+                <p class="card-text">For any query <i class="fa-solid fa-headset">:</i> <a
+                        href="contact-us.html">Contact
+                        Us</a></p>
+                <a id="#" href="#" class="btn btn-primary"><i class="fa-solid fa-circle-arrow-up fa-xl"></i></a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <i class="fa-regular fa-xs fa-copyright"></i>
+                <span>2023 All Rights Reserved, Study Hard
+                    <sup><i class="fa-sharp fa-regular fa-xs fa-registered"></i></sup>
+                </span>
+
+                <p>
+                    <a href="terms-and-condition.html"> Study Hard-T&C</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!--===========================================================================
+                                    JAVASCRIPT SECTION 
+    =========================================================================== -->
+
+    <script src="https://kit.fontawesome.com/bf8e253b13.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed(".auto-type", {
+            strings: ["KEEP LEARNING KEEP DEVELOPING", "NEVER COMPARE YOUR SELF FROM OTHER", "NEVER DEMOTIVATE YOUR SELF", "KEEP CALM AND THINK POSITIVE"],
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: true
+        })
+    </script>
+    <script>
+        function checkRedirect(value) {
+            switch (value.toLowerCase()) {
+                case "notes":
+                    window.location.href = "notes.html";
+                    break;
+                case "assignments":
+                    window.location.href = "assignment.html";
+                    break;
+                case "practical files":
+                    window.location.href = "practicalfiles.html";
+                    break;
+                case "previous year papers":
+                    window.location.href = "previouspapers.html";
+                    break;
+                case "articles":
+                    window.location.href = "articles.html";
+                    break;
+                case "research papers":
+                    window.location.href = "research-ppr.html";
+                    break;
+                case "questionnaire":
+                    window.location.href = "questionnaire.html";
+                    break;
+                default:
+                    // window.location.href = "index.html"
+                    // Handle other cases or provide a default action
+                    break;
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            duration = 500
+        );
+    </script>
+    <script>
+        const preloader = document.getElementById('loader');
+        function myFunction() {
+            preloader.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

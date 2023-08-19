@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4377c6;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #fff;
+}
+
+/* ==============================================================================
+                                  NAVBAR SECTION
+   ============================================================================== 
+*/
+
+.navbar {
+    --bs-navbar-toggler-border-radius: 1px;
+    --bs-navbar-toggler-focus-width: 0;
+    --bs-navbar-brand-font-size: 1.5rem;
+    --bs-navbar-brand-color: #fff;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    background-color: #4377c6 !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #000;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+/* ==============================================================================
+                                  HERO SECTION
+   ============================================================================== 
+*/
+
+
+.accordion {
+    width: 90%;
+    margin: auto;
+    --bs-accordion-btn-bg: #4377c6;
+    --bs-accordion-inner-border-radius: 0px;
+    margin: 3% auto;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #4377c6;
+    box-shadow: none;
+}
+
+.accordion-body {
+    text-align: justify;
+}
+
+.accordion-body .row>* {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.accordion-body .col {
+    border: 1px solid #4377c6;
+    padding: 0.5rem;
+}
+
+.accordion-body .container {
+    text-align: justify !important;
+}
+
+.difference {
+    padding: 0;
+    margin: auto;
+}
+
+.accordion-header h1 {
+    font-weight: 700;
+    margin: 2% 0 0 5%;
+    text-transform: uppercase;
+}
+
+.accordion-body h4 {
+    text-transform: capitalize;
+}
+
+.accordion-body h5 {
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.accordion-body p {
+    text-align: justify;
+    text-transform: initial;
+}
+
+.accordion-body img {
+    width: 100%;
+    height: 230px;
+}
+
+.accordion-body li {
+    list-style: url(images/icons8-forward-arrow-20.png);
+    margin: 1em 0;
+}
+
+.accordion-body pre {
+    width: 100%;
+    margin: 2% 0;
+    border: 1px solid #4377c6;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px -4px #000;
+}
+
+.accordion-body strong {
+    text-transform: capitalize;
+}
+
+/* ==============================================================================
+                                  MEDIA QUERY SECTION
+   ============================================================================== 
+*/
+
+@media (min-width:992px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .accordion h1 {
+        margin: 1% 0;
+    }
+
+    .accordion-body img {
+        width: 50%;
+        height: 18em;
+        margin: 2% 0 2% 25%;
+    }
+}
